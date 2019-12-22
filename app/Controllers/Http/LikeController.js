@@ -5,12 +5,12 @@
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 /**
- * Resourceful controller for interacting with people
+ * Resourceful controller for interacting with likes
  */
-class PersonController {
+class LikeController {
   /**
-   * Show a list of all people.
-   * GET people
+   * Show a list of all likes.
+   * GET likes
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -21,8 +21,8 @@ class PersonController {
   }
 
   /**
-   * Render a form to be used for creating a new person.
-   * GET people/create
+   * Render a form to be used for creating a new like.
+   * GET likes/create
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -33,8 +33,8 @@ class PersonController {
   }
 
   /**
-   * Create/save a new person.
-   * POST people
+   * Create/save a new like.
+   * POST likes
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -44,8 +44,8 @@ class PersonController {
   }
 
   /**
-   * Display a single person.
-   * GET people/:id
+   * Display a single like.
+   * GET likes/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -56,8 +56,8 @@ class PersonController {
   }
 
   /**
-   * Render a form to update an existing person.
-   * GET people/:id/edit
+   * Render a form to update an existing like.
+   * GET likes/:id/edit
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -68,8 +68,8 @@ class PersonController {
   }
 
   /**
-   * Update person details.
-   * PUT or PATCH people/:id
+   * Update like details.
+   * PUT or PATCH likes/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -79,8 +79,8 @@ class PersonController {
   }
 
   /**
-   * Delete a person with id.
-   * DELETE people/:id
+   * Delete a like with id.
+   * DELETE likes/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -90,4 +90,4 @@ class PersonController {
   }
 }
 
-module.exports = PersonController
+module.exports = LikeController
